@@ -1,1 +1,153 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Дякуємо за придбання курсу макіяжу для себе." />
+    <title>Дякую за твій вибір — IRYNA MAKEUP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet" />
 
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '955807143869570');
+      fbq('track', 'PageView');
+      fbq('track', 'Purchase', {
+        value: 10.9,
+        currency: 'USD'
+      });
+    </script>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+      :root {
+        --ink: #171613;
+        --paper: #f5f0e9;
+        --blush: #efc7bd;
+        --night: #393340;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        overflow: hidden;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Manrope", sans-serif;
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        z-index: -1;
+        width: 44vw;
+        height: 44vw;
+        border-radius: 50%;
+        filter: blur(1px);
+      }
+
+      body::before {
+        top: -22vw;
+        left: -12vw;
+        background: var(--blush);
+      }
+
+      body::after {
+        right: -18vw;
+        bottom: -24vw;
+        background: var(--night);
+      }
+
+      main {
+        position: relative;
+        width: min(920px, 100%);
+        padding: clamp(48px, 9vw, 104px) clamp(24px, 8vw, 92px);
+        overflow: hidden;
+        border-radius: 220px 220px 24px 24px;
+        background: var(--ink);
+        color: white;
+        text-align: center;
+        box-shadow: 0 30px 90px rgba(23, 22, 19, 0.18);
+      }
+
+      .eyebrow {
+        margin: 0 0 24px;
+        color: rgba(255,255,255,.62);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 740px;
+        margin: 0 auto 42px;
+        font-size: clamp(52px, 9vw, 104px);
+        font-weight: 500;
+        letter-spacing: -.06em;
+        line-height: .96;
+      }
+
+      h1 em {
+        display: block;
+        font-family: "Prata", serif;
+        font-style: italic;
+        font-weight: 400;
+      }
+
+      a {
+        display: inline-flex;
+        min-height: 58px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+        border: 1px solid var(--blush);
+        border-radius: 999px;
+        background: var(--blush);
+        color: var(--ink);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: .04em;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: transform .25s ease, background .25s ease, color .25s ease;
+      }
+
+      a:hover {
+        transform: translateY(-3px);
+        background: transparent;
+        color: white;
+      }
+
+      @media (max-width: 620px) {
+        body { padding: 14px; }
+        main { padding: 76px 20px 48px; border-radius: 160px 160px 20px 20px; }
+        h1 { margin-bottom: 34px; font-size: clamp(46px, 17vw, 70px); }
+        a { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=955807143869570&amp;ev=PageView&amp;noscript=1" alt="" /></noscript>
+    <main>
+      <p class="eyebrow">IRYNA MAKEUP · MAKEUP FOR YOURSELF</p>
+      <h1>Дякую за <em>твій вибір</em></h1>
+      <a href="https://telegram.me/IRENA_MAKEUP_bot?start=ZGw6MzQzNjIy">Перейти до навчання</a>
+    </main>
+  </body>
+</html>
