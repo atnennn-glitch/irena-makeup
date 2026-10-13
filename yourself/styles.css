@@ -53,9 +53,9 @@ h1 em, h2 em, .program-note em { font-family: "Prata", serif; font-weight: 400; 
 .look-label span { display: block; margin-bottom: .65rem; font-size: .65rem; letter-spacing: .2em; }
 .look-label strong { font: 400 clamp(2rem, 3.2vw, 3.7rem)/.98 "Prata", serif; }
 
-.ticker { overflow: hidden; padding: 1rem 0; background: var(--coral); color: white; white-space: nowrap; }
+.ticker { overflow: hidden; padding: 1rem 0; background: #efc7bd; color: var(--ink); white-space: nowrap; }
 .ticker div { width: max-content; padding-left: 2vw; font-size: 1rem; font-weight: 700; letter-spacing: .05em; animation: ticker 24s linear infinite; }
-.ticker i { margin: 0 1.2rem; font-style: normal; color: var(--lime); }
+.ticker i { margin: 0 1.2rem; font-style: normal; color: #b94f75; }
 @keyframes ticker { to { transform: translateX(-45%); } }
 
 .intro { display: block; padding-block: 10vw; }
