@@ -45,7 +45,7 @@ h1 em, h2 em, .program-note em { font-family: "Prata", serif; font-weight: 400; 
 .hero-visual { position: relative; }
 .portrait-wrap { position: relative; overflow: hidden; aspect-ratio: 4 / 5.2; background: var(--blush); border-radius: 180px 180px 18px 18px; }
 .portrait-wrap img { height: 100%; object-fit: cover; object-position: 62% center; transform: scale(1.02); transition: filter .5s, transform .5s; }
-.portrait-wrap.hero-static img { object-position: 50% center; }
+.portrait-wrap.hero-static img { object-position: 50% 42%; }
 .portrait-tint { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, rgba(25,18,20,.74)); pointer-events: none; }
 .portrait-wrap.night img { filter: saturate(.72) contrast(1.16) brightness(.74); transform: scale(1.06); }
 .portrait-wrap.night .portrait-tint { background: linear-gradient(180deg, rgba(20,14,27,.15), rgba(20,14,27,.88)); }
@@ -58,7 +58,8 @@ h1 em, h2 em, .program-note em { font-family: "Prata", serif; font-weight: 400; 
 .ticker i { margin: 0 1.2rem; font-style: normal; color: var(--lime); }
 @keyframes ticker { to { transform: translateX(-45%); } }
 
-.intro { display: grid; grid-template-columns: .7fr 1.5fr; gap: 8vw; padding-block: 10vw; }
+.intro { display: block; padding-block: 10vw; }
+.intro > div { width: min(860px, 74%); margin-left: auto; }
 .intro h2 { margin-bottom: 2.2rem; }
 .intro > div p { max-width: 710px; font-size: 1.08rem; line-height: 1.75; color: rgba(23,22,19,.7); }
 
@@ -84,12 +85,12 @@ h1 em, h2 em, .program-note em { font-family: "Prata", serif; font-weight: 400; 
 .skill-card h3 { margin-bottom: 1rem; font-size: 1.4rem; }
 .skill-card p { margin-bottom: 0; color: rgba(23,22,19,.65); font-size: .9rem; line-height: 1.65; }
 
-.program { display: grid; grid-template-columns: 1.1fr .9fr; background: var(--lime); }
-.program-note { min-height: 580px; padding: 4rem; background: var(--coral); color: white; display: flex; flex-direction: column; justify-content: space-between; }
+.program { display: grid; grid-template-columns: 1.1fr .9fr; background: #393340; color: white; }
+.program-note { min-height: 580px; padding: 4rem; background: #efc7bd; color: var(--ink); display: flex; flex-direction: column; justify-content: space-between; }
 .program-note p { font-size: .7rem; letter-spacing: .15em; text-transform: uppercase; }
 .program-note strong { max-width: 600px; font-size: clamp(2.5rem, 4.3vw, 5rem); line-height: 1; letter-spacing: -.04em; }
 .program-list { padding: 4rem; }
-.program-list > div { display: grid; grid-template-columns: 50px 1fr; gap: 1rem; padding: 1.35rem 0; border-bottom: 1px solid rgba(23,22,19,.25); }
+.program-list > div { display: grid; grid-template-columns: 50px 1fr; gap: 1rem; padding: 1.35rem 0; border-bottom: 1px solid rgba(255,255,255,.24); }
 .program-list span { font: 400 1.2rem "Prata", serif; }
 .program-list p { margin: 0; font-size: 1.08rem; }
 
@@ -172,6 +173,7 @@ footer p { margin: 0; opacity: .65; }
   .hero-actions { align-items: flex-start; flex-direction: column; }
   .hero-proof { gap: .7rem; }
   .portrait-wrap { aspect-ratio: 4 / 5.3; }
+  .intro > div { width: 100%; }
   .intro, .lessons, .skills, .author, .faq { padding-block: 5rem; }
   .section-heading { margin-bottom: 2.7rem; }
   .lesson-card { display: grid; grid-template-columns: 1fr; padding: 1rem; gap: 1.2rem; }
